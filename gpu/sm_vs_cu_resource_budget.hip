@@ -50,7 +50,7 @@ int main() {
   const int blockSize = 256;
   std::printf("Blocks of %d threads that fit on one unit, by scratchpad request:\n", blockSize);
   std::printf("  %-12s %-16s %s\n", "scratchpad", "blocks per unit", "blocks on the whole GPU at once");
-  const size_t requestsKB[] = {0, 4, 8, 16, 24, 32, 48};
+  const size_t requestsKB[] = {0, 4, 8, 12, 16, 24, 32, 48};
   for (size_t kb : requestsKB) {
     size_t bytes = kb * 1024;
     if (bytes > p.sharedMemPerBlock) break;
