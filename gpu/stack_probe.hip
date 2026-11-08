@@ -1,5 +1,5 @@
 // stack_probe.hip
-// Companion example for: topnotchnote.com/gpu/rocm_stack.html
+// Companion example for: topnotchnote.com/gpu/cuda_rocm_stack.html
 //
 // Touches every layer of the GPU software stack once (runtime, a math library,
 // a kernel), then asks Linux which pieces of the stack are actually in the
